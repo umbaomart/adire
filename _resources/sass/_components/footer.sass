@@ -1,0 +1,87 @@
+/* =======================
+ * FOOTER
+ * ======================= */
+
+footer
+    position: relative
+    z-index: 2
+    overflow: hidden
+    background: #EEEFF1
+
+    &.chatlp6
+        background: $color--lightmaroon
+
+        .footer__link::before
+            background: $color--white
+
+.footer__limit
+    position: relative
+    z-index: 2
+    width: 88%
+    max-width: 1980
+    margin: auto
+    padding: 25px 0px
+
+.footer__links
+    position: relative
+    margin-bottom: 15px
+
+.footer__link
+    position: relative
+    margin-left: 20px
+    padding-left: 20px
+
+    &:hover
+        .footer__link-text
+            color: #bc1413 !important
+
+    &::before
+        content: ''
+        position: absolute
+        top: 0px
+        left: 0px
+        width: 1px
+        height: 100%
+        background: #333
+
+    &:first-child
+        margin-left: 0px
+        padding-left: 0px
+
+        &::before
+            display: none
+
+.footer__link-text,
+.footer__copyright
+    font-size: 15px
+    line-height: 25px
+    transition: all 0.15s ease
+
+.footer__img
+    position: absolute
+    top: 50%
+    left: 50%
+    z-index: 1
+    width: 194px
+    overflow: hidden
+    transform: translate(-50%, -50%)
+
+
+
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+
+@media screen and (max-width: 430px)
+    .footer__link-text,
+    .footer__copyright
+        font-size: 13px
+
+@media screen and (max-width: 360px)
+    .footer__link
+        margin-left: 12px
+        padding-left: 12px
+
+@media screen and (max-width: 330px)
+    .footer__link
+        margin-left: 10px
+        padding-left: 10px

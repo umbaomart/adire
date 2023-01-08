@@ -1,0 +1,1948 @@
+/* =======================
+ * FORMS
+ * ======================= */
+
+.chatform
+    position: relative
+
+    &.form--lp,
+    &.form--lp3
+        .cf-boxholder__bg.frame__bg
+            position: fixed
+            z-index: 1
+
+        .cf-boxholder__bg-overlay
+            position: absolute
+            width: 110%
+
+            &.overlay--1
+                top: 0px
+                left: 0px
+                z-index: 1
+                height: 100%
+                background: #f3f3f3
+                // background: #FDF5E6
+
+            &.overlay--2
+                left: 0px
+                bottom: -10%
+                z-index: 2
+                height: 400px
+                background: #a10100
+                transform: skewY(355deg)
+
+        .cf-boxholder,
+        .qf-boxholder
+            min-height: calc(100vh - 115px)
+
+        .cf-question__bubble
+            position: relative
+
+            p
+                display: none
+
+        .cf-choices,
+        .form__row
+            display: none
+
+        .cf-form
+            padding: 0px
+            background: transparent
+
+            .cf-answer__bubble
+                width: 250px
+
+        .cf-row.has-existing
+            .cf-question__bubble
+                p
+                    display: block
+
+        .cf-choices
+            .btn
+                width: 100%
+                margin-top: 20px
+                background: #fb7f00
+
+        .cf-box,
+        .qf-box
+            border-radius: 25px
+            background: #FDF5E6
+            // background: rgba(76, 45, 51, 0.9)
+            // background: #a10100
+            // background: rgba(1,43,15,0.9)
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1)
+
+        .cf-choice,
+        .qf-choice
+            background: #bc1413
+            // background: #be8160
+            // background: #BBB101
+            // background: #1b4965
+            // background: #FFD1D1
+            box-shadow: 0 5px 0px 0px #a10100
+            // box-shadow: 0 5px 0px 0px #fd8785
+            // box-shadow: 0 5px 0px 0px #212529
+            // box-shadow: 0 5px 0px 0px #9B9400
+            // box-shadow: 0 5px 0px 0px #6e4e4c
+
+            &:hover
+                background: #a10100
+                // background: #6e4e4c
+                // background: #9B9400
+                // background: #212529
+
+        .cf-choice__text,
+        .qf-choice__text
+            color: #fff
+
+        .cf-question__asstname,
+        .cf-answer__isread
+            color: #000
+
+        .cf-chatbubble
+            &.chatbubble--you
+                background: #bc1413
+                // background: #be8160
+                // background: #BBB101
+                // background: #1b4965
+                // background: #FFD1D1
+
+                *
+                    color: #fff
+
+        .cf-prefectures__category
+            &:hover,
+            &.is-active
+                background: #a10100
+                // background: #9B9400
+                // background: #FFD1D1
+
+                *
+                    color: #fff !important
+
+        .footer__copyright
+            color: #000 !important
+
+    &.form--lp2,
+    &.form--lp4
+        .cf-boxholder__bg.frame__bg
+            position: fixed
+            z-index: 1
+
+        .cf-boxholder__bg-overlay
+            position: absolute
+            width: 110%
+
+            &.overlay--1
+                top: 0px
+                left: 0px
+                z-index: 1
+                height: 100%
+                background: #f3f3f3
+                // background: #FDF5E6
+
+            &.overlay--2
+                left: 0px
+                bottom: -10%
+                z-index: 2
+                height: 400px
+                background: #a10100
+                transform: skewY(355deg)
+
+        .cf-box
+            margin-top: 80px
+
+        .cf-form
+            padding: 0px
+            background: transparent
+
+            .cf-answer__bubble
+                width: 250px
+
+        .cf-choices
+            .btn
+                width: 100%
+                margin-top: 20px
+                background: #fb7f00
+
+        .cf-box,
+        .qf-box
+            border-radius: 25px
+            background: #FDF5E6
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1)
+
+        .cf-choice,
+        .qf-choice
+            background: #bc1413
+            box-shadow: 0 5px 0px 0px #a10100
+
+            &:hover
+                background: #a10100
+
+        .cf-choice__text,
+        .qf-choice__text
+            color: #fff
+
+        .cf-question__asstname,
+        .cf-answer__isread
+            color: #000
+
+        .cf-chatbubble
+            &.chatbubble--you
+                background: #bc1413
+
+                *
+                    color: #fff
+
+        .cf-prefectures__category
+            &:hover,
+            &.is-active
+                background: #a10100
+
+                *
+                    color: #fff !important
+
+        .cf-form__btn.btn
+            width: 100%
+            max-width: 480px
+            margin: auto
+            background: transparent !important
+            box-shadow: none !important
+
+            img
+                display: block
+                width: 100%
+
+        .footer__copyright,
+        .cf-form__disclaimer
+            color: #000 !important
+
+    &.form--lp3
+        background: #F4F4F4
+
+        .cf-wrapper
+            width: 100%
+            max-width: 620px
+            margin: auto
+            background: #fff
+
+        .cf-boxholder__limit.frame__limit
+            width: 100%
+            padding: 0px !important
+
+        .cf-box
+            width: 100%
+            margin-top: 0px !important
+            padding: 30px 20px
+            border-radius: 0px !important
+
+        .cf-question__col.col--2
+            width: calc(100% - 60px)
+
+        .cf-question__asst
+            width: 60px
+            height: 60px
+
+        .cf-chatbubble
+            width: 350px
+            padding: 12px
+
+            *
+                font-size: 15px
+                line-height: 25px
+
+        .cf-formholder
+            .cf-chatbubble
+                width: 400px
+
+        .cf-form__btn.btn
+            background: transparent
+            box-shadow: none !important
+
+            img
+                display: block
+                width: 100%
+
+    &.form--lp4
+        .header__bg
+            position: absolute
+            top: 0px
+            left: 0px
+            width: 100%
+            height: 100%
+            background-size: cover
+            background-repeat: no-repeat
+
+        .header__limit
+            padding-top: 20px
+            padding-bottom: 25px
+
+        .header__logo
+            width: 421px
+            max-width: 100%
+
+        .cf-wrapper
+            padding-top: 113px
+
+        .cf-boxholder
+            position: relative
+            z-index: 1
+            min-height: 0px
+
+        .cf-boxholder__bg
+            position: absolute !important
+            background-attachment: inherit !important
+
+        .cf-box
+            margin-top: 0px
+
+    &.form--success
+        &.form--lp,
+        &.form--lp2,
+        &.form--lp3,
+        &.form--lp4
+            .cf-boxholder__bg-overlay
+                position: absolute
+                width: 110%
+
+                &.overlay--1
+                    top: 0px
+                    left: 0px
+                    z-index: 1
+                    height: 100%
+                    background: #f3f3f3
+                    // background: #FDF5E6
+
+                &.overlay--2
+                    left: 0px
+                    bottom: -18%
+                    z-index: 2
+                    height: 380px
+                    background: #a10100
+                    transform: skewY(355deg)
+
+            .cf-success__title.title--1,
+            .cf-success__desc.frame__desc
+                *
+                    color: #000 !important
+
+            .cf-success__desc.frame__desc
+                .yellow-block
+                    color: #000 !important
+
+        // .cf-boxholder__bg
+        //     display: none
+
+        //     &.is-active
+        //         display: block
+
+        //         &.sp
+        //             display: none
+
+        //     &.none
+        //         background: linear-gradient(344deg, #63ead6 0%, #dac4ff 100%)
+
+        .cf-box
+            width: 600px
+
+.cf-boxholder,
+.qf-boxholder
+    min-height: 100vh
+
+.cf-boxholder__bg
+    background-attachment: fixed
+
+.cf-box,
+.qf-box
+    position: relative
+    width: 1050px
+    min-height: 400px
+    margin: auto
+    margin-top: 30px
+    padding: 40px
+    background: #EEEFF1
+    border-radius: 0px
+
+.cf-box__dynamic
+    position: relative
+
+.cf-row
+    position: relative
+    display: none
+    margin-bottom: 25px
+
+    &.is-active
+        display: block
+
+    &:last-child
+        margin-bottom: 0px
+
+.cf-question
+    margin-bottom: 25px
+
+.cf-question__col
+    &.col--2
+        width: calc(100% - 70px)
+        padding-left: 20px
+
+.cf-question__asst
+    position: relative
+    width: 70px
+    height: 70px
+    border-radius: 50%
+
+.cf-question__asstname
+    margin-bottom: 10px
+    font-size: 12px
+    color: #333
+    // text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15)
+
+.cf-answer
+    position: relative
+    display: none
+
+    &.is-active
+        display: block
+
+.cf-answer__isread
+    margin-right: 15px
+    font-size: 12px
+    color: #333
+
+.cf-choices
+    position: relative
+    padding: 25px 20px
+    padding-bottom: 10px
+    background: #fff
+    border-radius: 15px
+
+    &.is-hidden
+        display: none
+
+.cf-choice,
+.qf-choice
+    position: relative
+    margin-bottom: 15px
+    background: #007C57
+    border-radius: 5px
+    box-shadow: 0 5px 0px 0px #006044
+    text-align: center
+    transition: all 0.15s ease
+    cursor: pointer
+
+    &:hover
+        background: #00a775
+        box-shadow: 0 5px 0px 0px #007C57
+
+    // &::after
+    //     content: ''
+    //     position: absolute
+    //     top: 0px
+    //     left: 0px
+    //     width: 100%
+    //     height: 105%
+    //     border-radius: 5px
+    //     box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.2)
+
+
+.cf-choice__text,
+.qf-choice__text
+    position: relative
+    z-index: 2
+    padding: 25px 15px
+    font-family: $font--1
+    font-size: 20px
+    color: #fff
+    letter-spacing: 1px
+
+.cf-chatbubble
+    position: relative
+    width: 408px
+    padding: 15px
+    background: #fff
+    border-radius: 15px
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1)
+
+    &.chatbubble--you
+        width: 250px
+        background: #007C57
+        text-align: right
+
+        *
+            color: #fff
+
+    *
+        font-size: 18px
+        line-height: 28px
+        color: #333
+
+    .note
+        font-size: 15px
+        line-height: 25px
+
+.cf-beforeform
+    margin: 25px auto
+
+    *
+        font-size: 19px
+        line-height: 28px
+
+.cf-formholder
+    margin-top: 25px
+
+    .cf-chatbubble.size--l
+        width: 537px
+
+    &#qset-5
+        .color--red
+            font-weight: bold
+            font-size: 19px
+
+        .note
+            font-weight: normal !important
+
+.cf-form
+    position: relative
+    padding: 30px
+    background: #fff
+    border-radius: 15px
+
+.cf-form__btn.btn,
+.qf-form__btn.btn
+    width: 100%
+    overflow: hidden
+    background: #FF7A01
+    border-radius: 5px
+    box-shadow: 0 5px 0px 0px #742E24
+    transition: all 0.15s ease
+
+    &:hover
+        background: $color--red !important
+        box-shadow: 0 5px 0px 0px #ff6875 !important
+
+    .btn__text
+        position: relative
+        z-index: 2
+        padding: 22px 10px
+        font-size: 25px
+        font-weight: bold
+
+.cf-form__disclaimer,
+.qf-form__disclaimer
+    margin-top: 18px
+    text-align: center
+    color: #909090
+
+
+/**
+ * QUIZ-LIKE
+ */
+.quizform
+    .qf-boxholder__bg
+        background: linear-gradient(344deg, #63ead6 0%, #dac4ff 100%)
+
+    .cf-prefectures__category
+        &.is-active,
+        &:hover
+            background: #FF7A01
+
+.qf-box
+    width: 1140px
+    background: #fff
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2)
+
+.qf-box__header
+    width: 83%
+    margin: auto
+
+.qf-box__header-img,
+.qf-box__header-dialog
+    position: relative
+    width: 180px
+    height: 180px
+
+.qf-box__header-ok
+    position: absolute
+    right: 0px
+    bottom: 30px
+    width: 100%
+    text-align: center
+    transform: rotate(7deg)
+
+    &::before,
+    &::after
+        content: ''
+        position: absolute
+        bottom: 8px
+        width: 3px
+        height: 65px
+        background: $color--red
+
+    &::before
+        left: 1px
+        transform: rotate(-15deg)
+
+    &::after
+        right: 1px
+        transform: rotate(15deg)
+
+    *
+        font-size: 35px
+        line-height: 45px
+        color: $color--red
+
+.qf-box__header-text
+    padding: 0px 25px
+
+    .blocks
+        margin-top: 10px
+
+        *
+            padding: 3px 7px
+            padding-bottom: 9px
+            background: #333
+            border-radius: 5px
+            font-size: 85px
+            line-height: 95px
+
+    *
+        font-size: 22px
+        line-height: 32px
+
+.qf-box__set
+    position: relative
+    display: none
+    padding: 35px
+    padding-top: 50px
+    background: #e1fff9
+    border: 3px solid #c0fff1
+    border-radius: 10px
+
+    &.is-active
+        display: block
+
+#qset-5
+    .qf-question
+        border: 2px solid $color--red
+
+        *
+            margin-bottom: 10px
+
+            &:nth-child(1)
+                font-size: 25px
+                line-height: 35px
+
+            &:last-child
+                margin-bottom: 0px
+                letter-spacing: 5px
+
+.qf-question
+    margin-bottom: 30px
+
+    *
+        font-size: 21px
+        line-height: 31px
+
+        &:last-child
+            margin-top: 10px
+            font-size: 16px
+            line-height: 26px
+
+.qf-choice
+    margin-bottom: 20px
+    // box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.15)
+
+    // &::before
+    //     background: linear-gradient(0deg, #4bffd8 0%, #ebffba 100%)
+    // &::after
+    //     background: linear-gradient(0deg, #63ead6 0%, #dac4ff 100%)
+
+
+.qf-choice__text
+    padding: 30px 15px
+    color: #333
+
+.qf-formholder
+    .qf-question
+        padding: 25px
+        background: white
+        border-radius: 10px
+        text-align: center
+
+.qf-form__btn.btn
+    &::before
+        background: linear-gradient(0deg, #4bffd8 0%, #ebffba 100%)
+
+
+/**
+ * SUCCESS
+ */
+.cf-success__title,
+.cf-success__subtitle
+    margin-bottom: 40px
+
+    &.title--1
+        margin-bottom: 20px
+
+    &.title--2
+        text-shadow: 1px 1px 0 #fff,-1px 1px 0 #fff,1px -1px 0 #fff,-1px -1px 0 #fff,0px 1px 0 #fff,0px -1px 0 #fff,-1px 0px 0 #fff,1px 0px 0 #fff,2px 2px 0 #fff,-2px 2px 0 #fff,2px -2px 0 #fff,-2px -2px 0 #fff,0px 2px 0 #fff,0px -2px 0 #fff,-2px 0px 0 #fff,2px 0px 0 #fff,1px 2px 0 #fff,-1px 2px 0 #fff,1px -2px 0 #fff,-1px -2px 0 #fff,2px 1px 0 #fff,-2px 1px 0 #fff,2px -1px 0 #fff,-2px -1px 0 #fff
+        *
+            font-size: 35px
+            line-height: 1.3
+
+    *
+        font-size: 25px
+        line-height: 35px
+
+        @media screen and (max-width: 600px)
+            font-size: 20px
+
+.cf-success__subtitle
+    margin-bottom: 20px
+
+    &.number
+        display: inline-block
+        padding: 20px 30px
+        background-color: #fff
+
+    p
+        font-size: 42px
+        padding-bottom: 5px
+
+
+.cf-success__desc.frame__desc
+    margin-bottom: 35px
+
+    p
+        &.yellow-block
+            padding: 0 5px
+            font-weight: bold
+            box-sizing: border-box
+            display: inline-block
+            background-color: #FDFF00
+
+    *
+        font-weight: 500
+        font-size: 20px
+        line-height: 28px
+        @media screen and (max-width: 580px)
+            font-size: 17px
+
+.cf-success__disclaimer.frame__desc
+    margin-bottom: 35px
+
+    *
+        font-size: 15px
+        line-height: 25px
+
+.cf-success__contactinfo
+    position: relative
+    padding: 25px
+    background: #fff
+    border-radius: 10px
+
+    *
+        font-size: 18px
+        line-height: 28px
+        color: #22bfc4
+
+    .number
+        width: 200px
+        margin: auto
+        margin-top: 25px
+        padding-top: 10px
+        border-top: 2px solid #23bfc5
+        font-size: 30px
+        line-height: 40px
+
+.field-prefectures
+    input
+        cursor: pointer
+
+        &:read-only
+            background: #fff !important
+
+.field-iagree
+    *
+        font-size: 16px
+        color: #000 !important
+
+    a
+        text-decoration: underline
+
+.phone-err
+    opacity: 0
+
+    &.is-active
+        opacity: 1
+
+
+/**
+ * PREFECTURES (MODAL)
+ */
+.cf-prefectures__categories
+    position: relative
+    width: 300px
+
+.cf-prefectures__category
+    position: relative
+    width: 100%
+    padding: 15px
+    background: #efefef
+    border-bottom: 1px solid #ddd
+    cursor: pointer
+    transition: all 0.15s ease
+
+    &:hover,
+    &.is-active
+        background: #007C57
+
+        *
+            color: #fff !important
+
+
+    &:last-child
+        border-bottom: none
+
+    *
+        font-size: 18px
+        line-height: 28px
+        transition: all 0.15s ease
+
+.cf-prefectures__listholder
+    width: calc(100% - 310px)
+    margin-left: 10px
+
+.cf-prefectures__list
+    position: relative
+    width: 100%
+    display: none
+
+    &.is-active
+        display: block
+
+.cf-prefectures__list-item
+    width: 100%
+    padding: 15px
+    border-bottom: 1px solid #ddd
+    cursor: pointer
+
+    *
+        font-size: 18px
+        line-height: 28px
+
+/**
+ * LOADER
+ */
+.cf-loader,
+.qf-loader
+    position: relative
+    display: none
+    margin: 30px auto
+    font-size: 10px
+    text-indent: -9999em
+    color: #bc1413
+    transform: translateZ(0)
+    -webkit-animation-delay: -0.16s
+    animation-delay: -0.16s
+
+    &.is-active
+        display: block
+
+.cf-loader.is-active,
+.cf-loader.is-active:before,
+.cf-loader.is-active:after,
+.qf-loader.is-active,
+.qf-loader.is-active:before,
+.qf-loader.is-active:after
+    width: 12px
+    height: 12px
+    border-radius: 50%
+    animation-fill-mode: both
+    animation: load7 1.5s infinite ease-in-out
+
+.cf-loader.is-active:before,
+.cf-loader.is-active:after,
+.qf-loader.is-active:before,
+.qf-loader.is-active:after
+    content: ''
+    position: absolute
+    top: 0
+
+.cf-loader.is-active:before,
+.qf-loader.is-active:before
+    left: -3.5em
+    -webkit-animation-delay: -0.32s
+    animation-delay: -0.32s
+
+.cf-loader.is-active:after,
+.qf-loader.is-active:after
+    left: 3.5em
+
+@-webkit-keyframes load7
+    0%,
+    80%,
+    100%
+        box-shadow: 0 2.5em 0 -1.3em
+
+    40%
+        box-shadow: 0 2.5em 0 0
+
+@keyframes load7
+    0%,
+    80%,
+    100%
+        box-shadow: 0 2.5em 0 -1.3em
+
+    40%
+        box-shadow: 0 2.5em 0 0
+
+.qf-loader
+    color: #ffd048 !important
+
+.cf-boxholder__bg.sp
+    display: none
+
+.cf-dotfallingholder
+    position: absolute
+    top: 50%
+    left: 30px
+    display: none
+    transform: translateY(-50%)
+
+    &.is-active
+        display: block
+
+.cf-dotfalling
+    position: relative
+    left: -9999px
+    width: 8px
+    height: 8px
+    border-radius: 5px
+    background-color: #000
+    color: #000
+    box-shadow: 9999px 0 0 0 #000
+    animation: dotFalling 0.8s infinite linear
+    animation-delay: .1s
+
+.cf-dotfalling::before, .cf-dotfalling::after
+    content: ''
+    display: inline-block
+    position: absolute
+    top: 0
+
+.cf-dotfalling::before
+    width: 8px
+    height: 8px
+    border-radius: 5px
+    background-color: #000
+    color: #000
+    animation: dotFallingBefore 0.8s infinite linear
+    animation-delay: 0.2s
+
+.cf-dotfalling::after
+    width: 8px
+    height: 8px
+    border-radius: 5px
+    background-color: #000
+    color: #000
+    animation: dotFallingAfter 0.8s infinite linear
+    animation-delay: 0s
+
+@keyframes dotFalling
+    0%,
+    100%
+        box-shadow: 9999px 0px 0 0 #000
+
+    25%,
+    50%
+        box-shadow: 9999px -6px 0 0 #000
+
+@keyframes dotFallingBefore
+    0%,
+    100%
+        box-shadow: 9984px 0px 0 0 #000
+
+    25%,
+    50%
+        box-shadow: 9984px -6px 0 0 #000
+
+
+@keyframes dotFallingAfter
+    0%,
+    100%
+        box-shadow: 10014px 0px 0 0 #000
+
+    25%,
+    50%
+        box-shadow: 10014px -6px 0 0 #000
+
+
+.cf-form__goto
+    margin-top: 15px
+    font-size: 12px
+    line-height: 15px
+    color: #909090
+    text-align: center
+
+    a
+        color: $color--red !important
+
+
+/*
+ * COMICS
+ */
+.cf-comics
+    position: relative
+    padding: 20px
+
+.cf-comics__title
+    margin-bottom: 10px
+    font-size: 13px
+    color: #888
+    text-align: right
+
+.cf-comics__img
+    display: block
+    width: 100%
+    margin-bottom: 10px
+
+    &.title
+        margin: 50px auto
+
+    &.img--26
+        margin-bottom: 50px
+
+    &:last-child
+        margin-bottom: 0px
+
+.cf-comics__textholder
+    margin-top: 40px
+    text-align: center
+
+    &.textholder--2
+        margin-top: 12px
+
+    &.textholder--4
+        margin-bottom: 40px
+
+        .arrow
+            margin-bottom: 20px
+
+    &.textholder--5
+        margin-bottom: 40px
+
+.cf-comics__text
+    position: relative
+    margin-bottom: 15px
+
+    &:last-child
+        margin-bottom: 0px
+
+    &.text--3
+        *
+            background-color: rgb(255, 255, 0)
+            color: rgb(230, 0, 0)
+
+    &.text--4
+        span
+            color: rgb(230, 0, 0)
+
+    *
+        display: inline-block
+        background: rgba(0, 0, 0, 0) linear-gradient(transparent 60%,#ffff00 0%) repeat scroll 0 0
+        font-size: 17px
+        font-weight: bold
+        color: #000
+
+        &.l
+            font-size: 27px
+
+        &.xl
+            font-size: 32px
+
+        &.no-bg
+            background: transparent
+
+.cf-comics__btn
+    position: relative
+    width: 100%
+    max-width: 420px
+    margin: auto
+    margin-top: 30px
+    cursor: pointer
+
+    a
+        display: inline-block
+        width: 100%
+
+    img
+        display: block
+        width: 100%
+
+/*
+ * CHATFORM LP4
+ */
+.lp4-available,
+.lp4-concerns
+    border-top: 40px solid #a10100
+
+.lp4-available__limit.frame__limit
+    padding: 30px 0px
+
+.lp4-available__header,
+.lp4-available__desc,
+.lp4-reduction__textholder,
+.lp4-reduction__header,
+.lp4-concerns__header,
+.lp4-concerns__list,
+.lp4-concerns__featured,
+.lp4-concerns__woman,
+.lp4-recommend__box,
+.lp4-arrow
+    position: relative
+    width: 100%
+    margin: auto
+
+    img
+        display: block
+        width: 100%
+
+.lp4-available__header
+    max-width: 840px
+
+.lp4-available__desc
+    &.desc--1
+        max-width: 1184px
+        margin-top: -15px
+        margin-bottom: 25px
+
+    &.desc--2
+        max-width: 715px
+        margin-right: 27%
+
+.lp4-reduction__limit.frame__limit
+    padding-top: 20px
+    padding-bottom: 0px
+
+.lp4-reduction__textholder
+    position: relative
+    width: 100%
+    max-width: 1413px
+    margin: auto
+
+    > div
+        &:first-child
+            width: 460px
+
+        &:last-child
+            width: calc(100% - 460px)
+            padding-left: 5px
+
+.lp4-reduction__header
+    max-width: 486px
+    margin-left: 0px
+    margin-bottom: 15px
+
+.lp4-reduction__woman
+    margin-top: -35.5%
+
+.lp4-concerns__header,
+.lp4-concerns__list
+    max-width: 1010px
+
+.lp4-concerns__header
+    margin-bottom: 70px
+
+.lp4-concerns__group
+    position: relative
+
+    &.group--2
+        width: 100%
+        max-width: 1000px
+        margin: auto
+
+.lp4-concerns__list
+    &.list--1
+        margin-bottom: 100px
+
+    &.list--2
+        max-width: 81%
+        margin-left: 0px
+
+.lp4-concerns__featured
+    max-width: 1200px
+    margin-bottom: 70px
+
+.lp4-concerns__woman
+    position: absolute
+    right: 14%
+    bottom: 0px
+    width: 365px
+
+.lp4-recommend__limit.frame__limit
+    padding-top: 150px
+
+.lp4-recommend__box
+    max-width: 1000px
+    padding: 120px 150px
+    background: #fff
+    box-shadow: 0px 0px 13px rgba(0, 0, 0, 0.4)
+    border-radius: 80px
+
+.lp4-recommend__box-header,
+.lp4-recommend__box-footer
+    position: absolute
+    left: 50%
+    width: 100%
+    transform: translateX(-50%)
+
+.lp4-recommend__box-header
+    top: -50px
+    max-width: 697px
+
+.lp4-recommend__box-desc
+    width: 100%
+    max-width: 623px
+    margin: auto
+    margin-top: 50px
+
+.lp4-recommend__box-footer
+    bottom: -70px
+    max-width: 793px
+    animation: floating-box 1.2s ease infinite
+
+@keyframes floating-box
+    0%, 100%
+        transform:  translate(-50%, 0px)
+
+    55%
+        transform:  translate(-50%, -5%)
+
+.lp4-arrow
+    z-index: 2
+    max-width: 685px
+    padding-top: 30px
+    animation: floating 1.2s ease infinite
+
+@keyframes floating
+    0%, 100%
+        transform: translateY(0px)
+
+    55%
+        transform: translateY(-5%)
+
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+
+@media screen and (max-width: 2000px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__desc.desc--2
+        margin-right: 25%
+
+@media screen and (max-width: 1888px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__desc.desc--2
+        margin-right: 23%
+
+@media screen and (max-width: 1800px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-concerns__woman
+        right: 10%
+
+@media screen and (max-width: 1755px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__desc.desc--2
+        margin-right: 21%
+
+@media screen and (max-width: 1620px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__desc.desc--2
+        margin-right: 19%
+
+    .lp4-concerns__woman
+        right: 0%
+
+@media screen and (max-width: 1525px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__desc.desc--2
+        margin-right: 17%
+
+@media screen and (max-width: 1480px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__header
+        max-width: 800px
+
+    .lp4-available__desc
+        &.desc--1
+            max-width: 1050px
+            margin-top: -5px
+
+        &.desc--2
+            max-width: 680px
+            margin-right: 17%
+
+    .lp4-reduction__textholder
+        > div:first-child
+            width: 35%
+
+        > div:last-child
+            width: 65%
+
+@media screen and (max-width: 1360px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__header
+        max-width: 700px
+
+    .lp4-available__desc
+        &.desc--1
+            max-width: 950px
+            margin-top: -5px
+
+        &.desc--2
+            max-width: 600px
+            margin-right: 17%
+
+
+    .lp4-reduction__header
+        max-width: 53%
+
+
+@media screen and (max-width: 1290px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-concerns__group.group--2
+        max-width: 75%
+
+    .lp4-concerns__woman
+        width: 30%
+
+@media screen and (max-width: 1250px)
+    /**
+     * CHATFORM LP4
+     */
+    .chatform.form--lp4
+        .header__logoholder
+            width: 300px
+
+        .cf-wrapper
+            padding-top: 101px
+
+    .lp4-available,
+    .lp4-concerns
+        border-top: 28px solid #a10100
+
+
+    .lp4-available__header
+        max-width: 55%
+
+    .lp4-available__desc
+        &.desc--1
+            max-width: 80%
+
+        &.desc--2
+            max-width: 52%
+            margin-right: 17%
+
+@media screen and (max-width: 1200px)
+    .qf-box__header
+        width: 90%
+
+@media screen and (max-width: 1250px)
+    .qf-box
+        width: 100%
+
+@media screen and (max-width: 1180px)
+    .cf-box
+        width: 100%
+
+@media screen and (max-width: 1115px)
+    .qf-box__header
+        width: 100%
+
+
+@media screen and (max-width: 1080px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available__limit.frame__limit
+        padding-bottom: 2%
+
+    .lp4-available__desc
+        &.desc--1
+            margin-bottom: 2%
+
+    .lp4-reduction__limit.frame__limit
+        padding-top: 1.5%
+
+    .lp4-concerns__limit.frame__limit
+        padding: 10% 0px
+
+    .lp4-concerns__header,
+    .lp4-concerns__featured
+        margin-bottom: 7%
+
+    .lp4-concerns__list
+        &.list--1
+            margin-bottom: 10%
+
+    .lp4-recommend__box
+        padding: 12% 10%
+
+    .lp4-recommend__box-header
+        top: -5%
+        max-width: 70%
+
+    .lp4-recommend__box-footer
+        bottom: -8%
+        max-width: 80%
+
+@media screen and (max-width: 1050px)
+    .qf-box__header-text
+        *
+            font-size: 18px
+            line-height: 28px
+
+        .blocks *
+            font-size: 68px
+            line-height: 68px
+
+    .qf-box__header-img,
+    .qf-box__header-dialog
+        width: 150px
+        height: 150px
+
+    .qf-box__header-ok
+        bottom: 18px
+
+        &::before,
+        &::after
+            height: 55px
+
+        *
+            font-size: 28px
+            line-height: 38px
+
+
+@media screen and (max-width: 860px)
+    .qf-box
+        padding: 25px
+
+    .qf-box__set
+        padding: 25px
+        padding-top: 35px
+
+    .qf-box__header-text
+        *
+            font-size: 14px
+            line-height: 24px
+
+        .blocks *
+            font-size: 55px
+            line-height: 55px
+
+    .qf-box__header-img,
+    .qf-box__header-dialog
+        width: 120px
+        height: 120px
+
+    .qf-box__header-ok
+        bottom: 18px
+
+        &::before,
+        &::after
+            width: 2px
+            height: 40px
+
+        *
+            font-size: 22px
+            line-height: 32px
+
+@media screen and (max-width: 850px)
+    .cf-box
+        padding: 30px 20px
+
+    .cf-question__col.col--2
+        width: calc(100% - 60px)
+
+    .cf-question__asst
+        width: 60px
+        height: 60px
+
+    .cf-chatbubble
+        width: 350px
+        padding: 12px
+
+        *
+            font-size: 15px
+            line-height: 25px
+
+    .cf-formholder
+        .cf-chatbubble.size--l
+            width: 400px
+
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-recommend__limit.frame__limit
+        padding-top: 12%
+        padding-bottom: 10%
+
+    .lp4-arrow
+        width: 65%
+
+@media screen and (max-width: 710px)
+    .chatform.form--success
+        .cf-box
+            width: 100%
+
+    .qf-box
+        padding: 18px
+
+    .qf-box__set
+        padding: 18px
+        padding-top: 25px
+
+    .qf-box__header-text
+        padding: 0px 15px
+
+        *
+            font-size: 12px
+            line-height: 22px
+
+        .blocks *
+            font-size: 45px
+            line-height: 45px
+
+    .qf-box__header-img,
+    .qf-box__header-dialog
+        width: 100px
+        height: 100px
+
+    .qf-box__header-ok
+        bottom: 15px
+
+        &::before,
+        &::after
+            width: 2px
+            height: 35px
+
+        *
+            font-size: 18px
+            line-height: 28px
+
+@media screen and (max-width: 600px)
+    .chatform
+        &.form--lp
+            #qset-5
+                .cf-choices
+                    padding: 12px
+
+            .cf-boxholder__bg-overlay.overlay--2
+                transform: skewY(344deg)
+
+        &.form--lp3
+            .cf-question__col.col--2
+                width: calc(100% - 45px)
+
+            .cf-question__asst
+                width: 45px
+                height: 45px
+
+            .cf-question__asstname
+                font-size: 12px
+
+            .cf-formholder
+                .cf-chatbubble
+                    width: 100%
+
+                &#qset-5
+                    .color--red
+                        font-size: 16px
+
+            .cf-chatbubble
+                width: 100%
+
+                .note
+                    font-size: 13px
+                    line-height: 23px
+
+            .cf-chatbubble.chatbubble--you
+                width: 200px
+
+            .cf-choices
+                padding: 17px 13px
+                padding-bottom: 2px
+
+            .cf-form
+                padding: 0px !important
+                border-radius: 0px !important
+
+                .form__label *
+                    display: inline-block
+
+            .cf-form__disclaimer
+                font-size: 16px
+                line-height: 26px
+
+        &.form--lp4
+            .header__limit
+                padding-top: 15px
+                padding-bottom: 20px
+
+            .header__logo
+                width: 190px
+
+            .cf-wrapper
+                padding-top: 70px
+
+            .cf-chatbubble.chatbubble--you
+                width: 200px
+
+        &.form--success
+            &.form--lp
+                .cf-boxholder__bg-overlay.overlay--2
+                    transform: skewY(344deg)
+
+    .cf-boxholder,
+    .qf-boxholder
+        min-height: 0px
+
+    .cf-box,
+    .qf-box
+        min-height: 0px
+        margin-top: 70px
+        border-radius: 10px
+
+    .cf-boxholder__limit.frame__limit
+        width: 96%
+
+    .cf-question__col.col--2
+        width: calc(100% - 45px)
+
+    .cf-question__asst
+        width: 45px
+        height: 45px
+
+    .cf-question__asstname
+        font-size: 12px
+
+    .cf-beforeform
+        *
+            font-size: 16px
+            line-height: 24px
+
+    .cf-formholder
+        .cf-chatbubble.size--l
+            width: 100%
+
+        &#qset-5
+            .color--red
+                font-size: 16px
+
+    .cf-chatbubble
+        width: 100%
+
+        .note
+            font-size: 13px
+            line-height: 23px
+
+    .cf-chatbubble.chatbubble--you
+        width: 200px
+
+    .cf-choices
+        padding: 17px 13px
+        padding-bottom: 2px
+
+    .cf-form
+        padding: 20px
+        border-radius: 10px
+
+        .form__label *
+            display: inline-block
+
+    .cf-form__btn.btn,
+    .qf-form__btn.btn
+        .btn__text
+            font-size: 22px
+
+    .cf-form__disclaimer,
+    .qf-form__disclaimer
+        font-size: 16px
+        line-height: 26px
+
+    .field-iagree
+        *
+            font-size: 14px
+
+    /**
+     * SUCCESS
+     */
+    .cf-success__title,
+    .cf-success__subtitle
+        &.title--2 *
+            font-size: 21px
+            line-height: 38px
+
+        *
+            font-size: 17px
+            line-height: 28px
+
+    .cf-success__subtitle
+        &.number
+            padding: 15px
+
+            p
+                font-size: 30px
+
+
+    .cf-success__desc,
+    .cf-success__disclaimer,
+    .cf-success__contactinfo
+        .for--pc
+            display: none
+        .for--sp
+            display: block
+
+    .cf-success__disclaimer.frame__desc *
+        font-size: 16px
+        line-height: 26px
+        font-weight: bold
+
+    /**
+     * PREFECTURES (MODAL)
+     */
+    .cf-prefectures__categories
+        width: 180px
+
+    .cf-prefectures__listholder
+        width: calc(100% - 190px)
+
+    .cf-prefectures__categories,
+    .cf-prefectures__list-item
+        *
+            font-size: 16px
+            line-height: 26px
+
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-available,
+    .lp4-concerns
+        border-top: 18px solid #a10100
+
+    .lp4-available__limit.frame__limit
+        padding-top: 20px
+
+    .lp4-reduction__header
+        margin-bottom: 2%
+
+    .lp4-recommend__box
+        border-radius: 50px
+
+    .lp4-recommend__box-desc
+        margin-top: 7%
+
+@media screen and (max-width: 570px)
+    .qf-boxholder__limit.frame__limit
+        width: 97%
+
+    .qf-box
+        padding: 15px
+
+    .qf-box__set
+        padding: 15px
+        padding-top: 20px
+
+    .qf-box__header-text
+        padding: 0px 12px
+
+        *
+            font-size: 10px
+            line-height: 20px
+
+        .blocks
+            margin-top: 4px
+            margin-bottom: 6px
+
+            *
+                font-size: 35px
+                line-height: 35px
+
+    .qf-box__header-img,
+    .qf-box__header-dialog
+        width: 80px
+        height: 80px
+
+    .qf-box__header-ok
+        bottom: 15px
+
+        &::before,
+        &::after
+            bottom: 4px
+            width: 2px
+            height: 30px
+
+        *
+            font-size: 15px
+            line-height: 22px
+
+@media screen and (max-width: 500px)
+    .chatform.form--f4,
+    .chatform.form--lp
+        .cf-box
+            margin-top: 70px
+
+
+    .chatform
+        &.form--lp3,
+        &.form--lp4,
+        &.form--lp5
+            .cf-choice__text,
+            .qf-choice__text
+                font-size: 23px
+
+    .cf-box,
+    .qf-box,
+    .qf-box__set
+        padding: 20px 13px
+
+    .cf-question__col.col--2
+        padding-left: 10px
+
+
+    .cf-choices.by-2 > *,
+    .qf-choices.by-2 > *
+        width: 100%
+        margin-left: 0px !important
+
+    .qf-choices.by-2 > *
+        margin-bottom: 15px
+
+    #qset-5
+        .qf-question
+            padding: 15px
+
+            *
+                font-size: 18px
+                line-height: 28px
+
+                &:nth-child(1)
+                    font-size: 20px
+                    line-height: 31px
+
+@media screen and (max-width: 435px)
+    .qf-box__header-text
+        padding: 0px 10px
+
+        *
+            font-size: 9px
+            line-height: 16px
+
+        .blocks
+            margin-top: 3px
+            margin-bottom: 7px
+
+            *
+                padding-bottom: 6px
+                font-size: 27px
+                line-height: 27px
+
+    .qf-box__header-img
+        width: 65px
+        height: 65px
+
+    .qf-box__header-dialog
+        width: 55px
+        height: 55px
+
+    .qf-box__header-ok
+        bottom: 7px
+
+        &::before,
+        &::after
+            bottom: 2px
+            width: 1px
+            height: 20px
+
+        *
+            font-size: 10px
+            line-height: 15px
+
+@media screen and (max-width: 430px)
+    /**
+     * PREFECTURES (MODAL)
+     */
+    .cf-prefectures__categories
+        width: 150px
+
+    .cf-prefectures__listholder
+        width: calc(100% - 160px)
+
+    .cf-prefectures__categories,
+    .cf-prefectures__list-item
+        *
+            font-size: 16px
+            line-height: 26px
+
+    .cf-prefectures__category,
+    .cf-prefectures__list-item
+        padding: 15px 10px
+
+@media screen and (max-width: 400px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-concerns__group.group--2
+        max-width: 85%
+        margin-left: 0px
+
+    .lp4-concerns__woman
+        width: 34%
+
+@media screen and (max-width: 360px)
+    /**
+     * PREFECTURES (MODAL)
+     */
+    .cf-prefectures__categories
+        width: 132px
+
+    .cf-prefectures__listholder
+        width: calc(100% - 147px)
+        margin-left: 5px
+
+    .cf-prefectures__categories,
+    .cf-prefectures__list-item
+        *
+            font-size: 14px
+            line-height: 24px
+
+@media screen and (max-width: 355px)
+    .qf-box__header-img,
+    .qf-box__header-dialog
+        display: none
+
+
+@media screen and (max-width: 340px)
+    /**
+     * CHATFORM LP4
+     */
+    .lp4-recommend__box
+        border-radius: 30px

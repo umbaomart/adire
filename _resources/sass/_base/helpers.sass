@@ -1,0 +1,671 @@
+/* =======================
+ * HELPER CLASS
+ * ======================= */
+    
+*
+    box-sizing: border-box
+
+.for--sp
+    display: none
+
+/** 
+ * COLORS
+ */
+.color--yellow
+    color: $color--yellow
+.color--darkgreen 
+    color: $color--darkgreen
+.color--lightgreen 
+    color: $color--lightgreen
+.color--white  
+    color: $color--white !important
+.color--aqua
+    color: $color--aqua !important
+.color--red
+    color: $color--red !important
+.color--black
+    color: #333 !important
+
+/** 
+ * FONTS
+ */
+.font--1 
+    font-family: $font--1 
+.font--2  
+    font-family: $font--2 
+.font--3  
+    font-family: $font--3 
+
+.font--bold
+    font-weight: bold 
+.font--italic
+    font-style: italic
+.font--upcase  
+    text-transform: uppercase  
+.font--shadow  
+    text-shadow: 1px 1px 1px rgba(64, 64, 64, 0.53)
+
+.font--left  
+    text-align: left !important
+.font--right  
+    text-align: right 
+.font--center  
+    text-align: center 
+
+h1, h2, h3, h4, h5, h6 
+    font-family: $font--1
+    font-weight: bold
+
+p, span, label, a, i, strong, li 
+    font-family: $font--2
+
+/** 
+ * FRAME & HOLDERS
+ */
+.frame
+    position: relative
+    z-index: 2
+    overflow: hidden
+
+    &.overflow--visible
+        overflow: visible
+
+.frame__limit
+    position: relative
+    z-index: 2
+    width: 90%
+    max-width: 1950px
+    margin: auto
+    padding: 100px 0px
+    box-sizing: border-box
+    
+@media screen and (max-width: 600px)
+    .frame__limit
+        padding: 45px 0px
+
+.frame__header 
+    position: relative
+    margin-bottom: 35px
+
+    *
+        font-size: 35px
+        line-height: 45px
+
+@media screen and (max-width: 1100px)
+    .frame__header *    
+        font-size: 25px
+        line-height: 35px
+
+.frame__subtitle
+    *
+        font-size: 23px
+        line-height: 33px
+
+.frame__desc
+    *
+        font-size: 16px
+        line-height: 26px
+        color: $color--darkgreen
+
+    &.size--18px *
+        font-size: 18px
+        line-height: 28px
+
+/** 
+ * FRAME BACKGROUND
+ */
+.frame__bg
+    position: absolute
+    top: 0px
+    left: 0px
+    background-repeat: no-repeat !important
+    background-position: center center !important
+
+    &.bring--front
+        z-index: -1
+    &.bring--back
+        z-index: -2
+
+    &.size--cover
+        background-size: cover
+    &.size--contain
+        background-size: contain
+
+    &.repeat
+        background-position: top !important
+        background-repeat: repeat !important
+
+    &.align--r
+        left: auto
+        right: 0
+    &.align--l
+        left: 0
+    &.align--c
+        left: 50%
+        transform: translateX(-50%)
+
+.frame__bg-overlay
+    position: absolute
+    top: 0px
+    left: 0
+    z-index: 1
+    width: 100%
+    height: 100%
+
+    &.bg-color--white
+        background: rgba(255, 255, 255, 0.53)
+    
+    &.bg-color--darkgreen 
+        background: rgba(0,0,0,0.45) 
+
+    &.bg-color--blue
+        background: rgba(53, 68, 139, 0.93)
+
+/** 
+ * IMAGES
+ * prerequisite: parent container
+ * purpose: showing its original state according to the
+   width and height of the parent / holder.
+ */
+
+.img-fit 
+    position: absolute
+    top: 0px
+    left: 0px
+    right: 0px
+    bottom: 0px
+    max-width: 100%
+    max-height: 100%
+    margin: auto
+
+    &.size--90
+        max-width: 90% !important
+        max-height: 90% !important
+
+    &.size--55
+        max-width: 55% !important
+        max-height: 55% !important
+
+    &.size--50
+        max-width: 50% !important
+        max-height: 50% !important
+
+    &.size--40
+        max-width: 40% !important
+        max-height: 40% !important
+
+
+.icon
+    position: relative
+
+    &.size--25px
+        width: 25px
+        height: 25px
+
+    &.has--marginl
+        margin-left: 12px
+
+    &.has--marginr
+        margin-right: 12px
+
+/** 
+ * BUTTON
+ */
+.btn 
+    position: relative
+    display: block
+    width: 220px
+    margin-top: 35px
+    padding: 0
+    background: linear-gradient(45deg, $color--aqua, #26736C)
+    box-sizing: border-box
+    outline: none
+    text-align: center
+    cursor: pointer
+    transition: all .2s linear
+
+    &.green
+        background: #007C57
+        border-radius: 5px
+
+    &.size--l
+        width: 260px
+
+    &.align--r  
+        margin-left: auto 
+    &.align--l 
+        margin-right: auto 
+    &.align--c 
+        margin: auto
+        margin-top: 30px
+
+    a
+        width: 100%
+
+.btn__text 
+    width: 100%
+    padding: 18px 10px
+    font-family: $font--2
+    font-size: 16px
+    color: #fff
+    transition: all .15s linear
+
+/** 
+ * FORMS & FIELDS
+ */
+.form__row 
+    position: relative
+    margin-bottom: 20px
+
+    &.display__inline
+        > *
+            width: 48%
+
+        > *:first-child,
+        > *:nth-child(2n+1)
+            margin-right: 4%
+
+        > *.field-for--en
+            margin-right: 0px !important
+
+    &.display__inline.by-3
+        > *
+            width: 30.666%
+
+        > *:nth-child(1),
+        > *:nth-child(2)
+            margin-right: 4%
+
+        > *:last-child
+            margin-right: 0%
+
+.form__label,
+.form__text
+    position: relative
+    margin-bottom: 10px
+    font-family: $font--2
+    font-size: 17px
+    line-height: 27px
+    color: #333
+
+    &.no-text
+        height: 20px
+
+    .is-required
+        margin-left: 10px
+        padding: 3px 8px
+        background: $color--red
+        border-radius: 25px
+        font-size: 10px
+        color: white
+
+    .is-note
+        font-size: 10px
+
+.form__text
+    width: 100% !important
+
+.apply-border
+    width: 100%
+    padding: 7px 12px
+    background: #fff
+    border: 1px solid #cecece
+    border-radius: 5px
+    font-family: $font--2
+    font-size: 17px
+    color: #333
+
+    &::placeholder
+        color: #cecece
+
+.select-holder
+    background: #fff
+    position: relative
+
+    &.apply-border
+        padding: 0
+
+    &.is--disabled
+        background: #f1f1f1 !important
+
+        .apply-border
+            border: 1px solid #bfbfbf
+
+    &::before
+        content: ''
+        position: absolute
+        top: 50%
+        right: 20px
+        z-index: 0
+        width: 0px
+        height: 0px
+        border-left: 5px solid transparent
+        border-right: 5px solid transparent
+        border-top: 6px solid #ababab
+        transform: translateY(-50%)
+
+select
+    width: 100%
+    height: 50px
+    text-indent: 5px
+    background: transparent !important
+    border: none
+    -webkit-appearance: none
+    -moz-appearance: none
+    color: #333
+    cursor: pointer
+
+    &:invalid
+        color: gray !important
+
+    option
+        color: #1D1D1D
+
+textarea 
+    height: 187px !important
+
+input:read-only,
+textarea:read-only
+    background: #f1f1f1 !important
+
+    &.bg--white
+        background: #fff !important
+
+.form__checkbox
+    margin: 10px 0px
+
+    input
+        width: 16px
+        height: 16px
+        margin: auto
+
+    label
+        width: calc(100% - 16px)
+        padding-left: 10px
+        font-size: 15px
+
+.form__error
+    display: none
+    margin-top: 10px
+    font-size: 12px !important
+    color: $color--red
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button 
+    -webkit-appearance: none
+    margin: 0
+
+
+/* Firefox */
+input[type=number] 
+    -moz-appearance: textfield
+
+@media screen and (max-width: 600px)
+    .form__label, 
+    .form__text
+        font-size: 16px
+
+        .is-required
+            padding: 2px 8px
+            line-height: 16px
+
+    .apply-border
+        font-size: 16px
+
+.tableholder
+    position: relative
+    width: 100%
+    overflow-x: auto
+
+.table-text
+    font-family: $font--1
+    font-size: 18px
+    line-height: 28px
+    color: $color--darkgreen
+
+    &.table-price
+        font-size: 21px
+
+
+/** 
+ * WIDTH & HEIGHT
+ */
+.full 
+    width: 100%
+    height: 100%
+
+/** 
+ * COLUMNS
+ */
+.by-2  
+    & > *  
+        width: 50%
+        &:first-child,
+        &:nth-child(2n+1)  
+            margin-left: 0% 
+        
+    &.border--s > *  
+        width: 49.5% 
+    &.border--m > *  
+        width: 49.25% 
+    &.border--l > *  
+        width: 49% 
+    &.border--xl > *  
+        width: 48.5% 
+    &.border--xxl > *  
+        width: 47.5% 
+
+.by-3  
+    & > *  
+        width: 33.333%
+        &:first-child,
+        &:nth-child(3n+1)  
+            margin-left: 0% 
+        
+    &.border--s > *  
+        width: 32.666666667% 
+    &.border--m > *  
+        width: 32.333333333% 
+    &.border--l > *  
+        width: 32% 
+    &.border--xl > *  
+        width: 30.333333333% 
+    &.border--xxl > *  
+        width: 30% 
+
+.by-4  
+    & > *  
+        width: 25%
+        &:first-child,
+        &:nth-child(4n+1)  
+            margin-left: 0% 
+        
+    &.border--s > *  
+        width: 24.25% 
+    &.border--m > *  
+        width: 23.875% 
+    &.border--l > *  
+        width: 23.5% 
+    &.border--xl > *  
+        width: 22.75% 
+    &.border--xxl > *  
+        width: 21.25% 
+
+.by-5  
+    & > *  
+        width: 20%
+        &:first-child,
+        &:nth-child(5n+1)  
+            margin-left: 0% 
+
+    &.border--s > *  
+        width: 19.2% 
+    &.border--m > *  
+        width: 18.8% 
+    &.border--l > *  
+        width: 18.4% 
+    &.border--xl > *  
+        width: 17.6% 
+    &.border--xxl > *  
+        width: 16% 
+
+.border--s > *  
+    margin-left: 1% 
+.border--m > *  
+    margin-left: 1.5% 
+.border--l > *  
+    margin-left: 2% 
+.border--xl > *  
+    margin-left: 3% 
+.border--xxl > *  
+    margin-left: 5% 
+
+/** 
+ * DISPLAY
+ */
+.display__inline
+    font-size: 0
+    
+    & > * 
+        display: inline-block
+        vertical-align: middle
+
+    &.align--t > *  
+        vertical-align: top 
+    &.align--b > *  
+        vertical-align: bottom 
+
+.display__table 
+    position: relative
+    display: table
+    width: 100%
+    height: 100%
+
+.display__table-cell 
+    display: table-cell
+    vertical-align: middle
+
+    &.align--t  
+        vertical-align: top 
+    &.align--b  
+        vertical-align: bottom 
+
+.no-margin--b
+    margin-bottom: 0px !important
+
+/** 
+ * SCROLLBAR
+ */
+.scroll--custom
+    padding-right: 3px
+    overflow-y: auto
+
+    &::-webkit-scrollbar-track 
+        background-color: #F0F0F0
+
+    &::-webkit-scrollbar 
+        width: 5px
+        height: 5px
+        background-color: #F0F0F0
+
+    &::-webkit-scrollbar-thumb 
+        height: 2px
+        background-color: #777
+
+body
+    &::-webkit-scrollbar-track 
+        background-color: #fff
+        -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.15)
+
+    &::-webkit-scrollbar 
+        width: 5px
+        height: 5px
+
+    &::-webkit-scrollbar-thumb 
+        height: 5px
+        background-color: #777
+        border-radius: 10px
+
+/**
+ * VENDOR: SLICK
+ */
+.sliderholder
+    position: relative
+    width: 91%
+    margin-left: auto
+
+.slider-arrow
+    position: absolute
+    top: -90px
+    z-index: 9
+    width: 55px
+    height: 55px
+    background: $color--darkgreen
+    border-radius: 50%
+    transform: translateY(-50%)
+    cursor: pointer
+    transition: all 0.2s ease
+
+    &.arrow--prev
+        right: 15%
+
+    &.arrow--next 
+        right: 10%
+
+    &:hover
+        opacity: 0.8
+
+.slick-slide
+    outline: none !important
+
+
+/**
+ * VENDORS: DATETIMEPICKER
+ */
+.bootstrap-datetimepicker-widget table td, 
+.bootstrap-datetimepicker-widget table th
+    font-family: $font--2 !important
+    font-size: 14px !important
+
+.dropdown-menu 
+    position: absolute
+    top: 100%
+    left: 0
+    z-index: 1000
+    display: none
+    float: left
+    min-width: 10rem
+    padding: .5rem 0
+    margin: .125rem 0 0
+    font-family: $font--2 !important
+    font-size: 1rem
+    color: #212529
+    text-align: left
+    list-style: none
+    background-color: #fff
+    background-clip: padding-box
+    border: 1px solid rgba(0, 0, 0, .15)
+    border-radius: .25rem
+
+.dropup .dropdown-menu 
+    margin-top: 0
+    margin-bottom: .125rem
+    
+    
+.diag--text
+    margin-top: 40px
+    font-size: 30px!important
+
+      
+.anchor
+    position: relative
+    
+.anchor__link
+    position: absolute
+    top: -70px
+    left: 0
+    right: 0
+    width: 50px
+    height: 50px
+    outline: none

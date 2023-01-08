@@ -1,0 +1,23 @@
+@mixin HeiseiKakuGothicStd
+    font-family: heisei-kaku-gothic-std,sans-serif
+    font-style: normal
+
+// mediaquery Min
+@mixin mqMin($mqMin)
+  @media print,screen and (min-width: $mqMin)
+    @content
+
+// mediaquery Max
+@mixin mqMax($mqMax)
+  @media print,screen and (max-width: $mqMax)
+    @content
+
+@function get-vw-desktop($font)
+    $vw-context: $desktop-vw-viewport * 0.01 * 1px
+    $vw-val: $font / $vw-context * 1vw
+    @return $vw-val
+
+@function get-vw-mobile($font)
+    $vw-context: $mobile-vw-viewport * 0.01 * 1px
+    $vw-val: $font / $vw-context * 1vw
+    @return $vw-val

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script>
+        var _ssAnalytics = sessionStorage.getItem('ss_analytics');
+
+        if(_ssAnalytics) {
+        var _analytics = JSON.parse(_ssAnalytics);
+        initialize(_analytics);
+        }
+
+        function initialize(data) {
+        var answer1 = data.answers.find(x => x.qsetId === 1),
+            answer2 = data.answers.find(x => x.qsetId === 2),
+            answer3 = data.answers.find(x => x.qsetId === 3),
+            answer4 = data.answers.find(x => x.qsetId === 4);
+            answer5 = data.answers.find(x => x.qsetId === 5),
+            answer6 = data.answers.find(x => x.qsetId === 6),
+            answer7 = data.answers.find(x => x.qsetId === 7),
+            answer8 = data.answers.find(x => x.qsetId === 8);
+
+        var q8ans = "";
+        if(answer8) {
+            q8ans = answer8.qsetAns;
+        }
+
+        var uqid = "00610Rb3v9163efR";
+        var gid = "15";
+        var af = "";
+        var pid = "";
+        var amount = "";
+        var uid = {
+            'uid1': answer1.qsetAns,
+            'uid2': answer2.qsetAns,
+            'uid3': answer3.qsetAns,
+            'uid4': answer4.qsetAns,
+            'uid5': answer5.qsetAns,
+            'uid6': answer6.qsetAns,
+            'uid7': answer7.qsetAns,
+            'uid8': q8ans,
+            'uid9': data.prefectures,
+            'uid10': data.age,
+            'uid11': data.phone,
+            'uid12': data.email,
+            'uid13': sessionStorage.getItem("uniqueId"),
+            'uid14': "",
+            'uid15': "",
+            'uid16': "",
+            'uid17': "",
+            'uid18': "",
+            'uid19': "",
+            'uid20': "",
+            'uid21': "",
+            'uid22': "",
+            'uid23': "",
+            'uid24': "",
+            'uid25': "",
+        }
+        
+        var a = document.createElement("script");
+        a.src = "//ac.affi-ads.com/ac/action_js.php";
+        a.id = "afadaction-" + Date.now();
+        a.addEventListener("load", function() {
+            (new fpcAction(a.id)).groupAction(gid, af, uid, pid, amount, uqid)
+        });
+        document.head.appendChild(a);
+
+        sessionStorage.removeItem('ss_analytics');
+        sessionStorage.removeItem('uniqueId');
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <title>渋谷法務総合事務所</title>
+    <meta name="keywords" content="渋谷法務総合事務所">
+    <meta name="description" content="渋谷法務総合事務所">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta name="google" value="notranslate">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="shortcut icon" href="../_resources/images/favicon.png" type="image/x-icon" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="渋谷法務総合事務所" />
+    <meta property="og:url" content="" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="渋谷法務総合事務所" />
+    <meta property="og:image" content="" />
+    <meta property="og:locale" content="ja_JP">
+
+    <!-- Twitter Card -->
+    <meta property="twitter:card" content="Summary Card" />
+    <meta property="twitter:title" content="渋谷法務総合事務所" />
+    <meta property="twitter:description" content="渋谷法務総合事務所" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:image" content="" />
+
+    <style>
+		@font-face {
+			font-family: 'GothicMB101ProReg';
+			src: url('../_resources/fonts/A-OTF Gothic MB101 Pro R.otf') format('opentype');
+		}
+	</style>
+
+  <link rel="stylesheet" href="../_resources/css/compile.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TGVGMF5');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 439109333 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-439109333"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-439109333');
+</script>
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie"});
+</script>
+<script async>
+ytag({
+  "type":"yjad_conversion",
+  "config":{
+    "yahoo_ydn_conv_io": "qMwiym44ISD4DWDWiDDfmw..",
+    "yahoo_ydn_conv_label": "NP30LVQ04FSIX45PY9Z915334",
+    "yahoo_ydn_conv_transaction_id": "",
+    "yahoo_ydn_conv_value": "0"
+  }
+});
+</script>
+
+<script type="text/javascript">
+  (function(){
+    try {
+      var SmartnewsAds = { 'id' : 'xh622', 'event' : '' };
+
+      var script = document.createElement('script');
+      script.src = '//api.smartnews-ads.com/assets/conv.js?' + (new Date()).getTime();
+      script.type = 'text/javascript';
+      script.id = '_smartnews_ads_conversion_script_' + SmartnewsAds['id'];
+      script.setAttribute('data-smartnews-ads', JSON.stringify(SmartnewsAds));
+      (document.body||document.head).appendChild(script);
+    } catch (e) {}
+  })();
+</script>
+
+<!-- LINE Tag Base Code -->
+<!-- Do Not Modify -->
+<script>
+(function(g,d,o){
+  g._ltq=g._ltq||[];g._lt=g._lt||function(){g._ltq.push(arguments)};
+  var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+  var s=d.createElement('script');s.async=1;
+  s.src=o||h+'/n/line_tag/public/release/v1/lt.js';
+  var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+    })(window, document);
+_lt('init', {
+  customerType: 'lap',
+  tagId: '70423189-da8f-414c-82b6-b36b2076ea38'
+});
+_lt('send', 'pv', ['70423189-da8f-414c-82b6-b36b2076ea38']);
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+       src="https://tr.line.me/tag.gif?c_t=lap&t_id=70423189-da8f-414c-82b6-b36b2076ea38&e=pv&noscript=1" />
+</noscript>
+<!-- End LINE Tag Base Code -->
+<script>
+_lt('send', 'cv', {
+  type: 'Conversion'
+},['70423189-da8f-414c-82b6-b36b2076ea38']);
+</script>
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TJ3DMS9');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Global site tag (gtag.js) - Google Ads: 10949359790 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-10949359790"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'AW-10949359790');
+</script>
+<!-- Event snippet for リードフォームの送信 conversion page -->
+<script>
+  gtag('event', 'conversion', {'send_to': 'AW-10949359790/YeC8CP2U_c0DEK7xh-Uo'});
+</script>
+
+<!-- SmartNews Ads Pixel Code -->
+<script type="text/javascript">
+!function(){if(window.SmartnewsAds=window.SmartnewsAds||{},!window.SmartnewsAds.p){var e=window.SmartnewsAds.p=function(){e.callMethod?e.callMethod.apply(e,arguments):e.queue.push(arguments)};window.SmartnewsAds._p||(window.SmartnewsAds._p=e),e.push=e,e.version="1.0.0",e.queue=[];var n=document.createElement("script");n.async=!0,n.src="//cdn.smartnews-ads.com/i/pixel.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(n,s)}}();
+
+SmartnewsAds.p("73c3a3112116a4b3e47cdf97", "PageView");
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://i.smartnews-ads.com/p?id=73c3a3112116a4b3e47cdf97&e=PageView" />
+</noscript>
+<script type="text/javascript">
+  (function(){
+    try {
+      var SmartnewsAds = { 'id' : 'zs15r', 'event' : '' };
+
+      var script = document.createElement('script');
+      script.src = '//api.smartnews-ads.com/assets/conv.js?' + (new Date()).getTime();
+      script.type = 'text/javascript';
+      script.id = '_smartnews_ads_conversion_script_' + SmartnewsAds['id'];
+      script.setAttribute('data-smartnews-ads', JSON.stringify(SmartnewsAds));
+      (document.body||document.head).appendChild(script);
+    } catch (e) {}
+  })();
+</script>
+
+<!-- SmartNews Ads Pixel Code -->
+<script type="text/javascript">
+!function(){if(window.SmartnewsAds=window.SmartnewsAds||{},!window.SmartnewsAds.p){var e=window.SmartnewsAds.p=function(){e.callMethod?e.callMethod.apply(e,arguments):e.queue.push(arguments)};window.SmartnewsAds._p||(window.SmartnewsAds._p=e),e.push=e,e.version="1.0.0",e.queue=[];var n=document.createElement("script");n.async=!0,n.src="//cdn.smartnews-ads.com/i/pixel.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(n,s)}}();
+
+SmartnewsAds.p("07c13c86cd8f4c655044ddd4", "PageView");
+</script>
+<noscript>
+<img height="1" width="1" style="display:none;" alt="" src="https://i.smartnews-ads.com/p?id=07c13c86cd8f4c655044ddd4&e=PageView" />
+</noscript>
+
+<script type="text/javascript">
+  (function(){
+    try {
+      var SmartnewsAds = { 'id' : '101try', 'event' : '' };
+
+      var script = document.createElement('script');
+      script.src = '//api.smartnews-ads.com/assets/conv.js?' + (new Date()).getTime();
+      script.type = 'text/javascript';
+      script.id = '_smartnews_ads_conversion_script_' + SmartnewsAds['id'];
+      script.setAttribute('data-smartnews-ads', JSON.stringify(SmartnewsAds));
+      (document.body||document.head).appendChild(script);
+    } catch (e) {}
+  })();
+</script>
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({
+  "type":"yjad_retargeting",
+  "config":{
+    "yahoo_retargeting_id": "V0R81CC2CX",
+    "yahoo_retargeting_label": "",
+    "yahoo_retargeting_page_type": "",
+    "yahoo_retargeting_items":[
+      {item_id: '', category_id: '', price: '', quantity: ''}
+    ]
+  }
+});
+</script>
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie","config":{"ycl_use_non_cookie_storage":true}});
+</script>
+<script async>
+ytag({
+  "type":"yjad_conversion",
+  "config":{
+    "yahoo_ydn_conv_io": "6GVPcdmxn0EnVGvs69vCAw..",
+    "yahoo_ydn_conv_label": "NFFOSMJFHA8UG9JRUXS939904",
+    "yahoo_ydn_conv_transaction_id": "",
+    "yahoo_ydn_conv_value": "0"
+  }
+});
+</script>
+
+<!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '774753283579439');
+  fbq('track', 'PageView');
+  fbq('track', 'Contact');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=774753283579439&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({"type":"ycl_cookie"});
+</script>
+
+<script async>
+ytag({
+  "type":"yjad_conversion",
+  "config":{
+    "yahoo_ydn_conv_io": "PEPeXaWQ6sBZIdenhLj5Gg..",
+    "yahoo_ydn_conv_label": "JHFQTMD3ZCU85D8T98O942007",
+    "yahoo_ydn_conv_transaction_id": "",
+    "yahoo_ydn_conv_value": "7000"
+  }
+});
+</script>
+
+</head>
+
+<body class="chatform form--success">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TGVGMF5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TJ3DMS9"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <header class="in--form">
+        <div class="header__limit">
+            <div class="header__logo">
+                <img src="../_resources/images/logo.png">
+            </div>
+        </div>
+    </header>
+
+    <div class="cf-wrapper">
+        <section class="cf-boxholder frame">
+            
+            <div class="cf-boxholder__bg frame__bg full">
+				<div class="cf-boxholder__bg-overlay overlay--1"></div>
+				<div class="cf-boxholder__bg-overlay overlay--2"></div>
+			</div>
+
+            <div class="cf-boxholder__limit frame__limit">
+                <div class="cf-box font--center success-page">
+                    <div class="cf-success__title title--1">
+                        <p class="color--black font--bold">お問い合わせ有り難う御座います。</p>
+                    </div>
+                    <div class="cf-success__title title--2">
+                        <p class="color--red font--bold">診断結果は以下番号より<br>お電話にてご回答致します。</p>
+                    </div>
+
+                    <div class="cf-success__subtitle number">
+                        <a href="tel:0120456493">
+                            <p class="color--black">0120-456-493</p>
+                        </a>
+                    </div>
+
+                    <div class="cf-success__desc frame__desc">
+                        <p class="color--black yellow-block">※担当者の携帯番号からお電話することも御座います。</p>
+                        <p class="color--black">
+                            ※お急ぎの方は上記番号に直接ご連絡願います。<br><br>
+                            10時～20時の間にお電話させていただきますので、<br class="for--pc">
+                            着信が御座いましたら折り返しください。
+                            <br><br>
+                            また、お問い合わせ完了と同時に<br class="for--pc">
+                            詳細をお伺いするメールも送付しておりますので、<br class="for--pc">
+                            ご確認ご記入の上ご返信お願いします。
+                            <br><br>
+                            ※迷惑メールに割り振られる可能性もありますので、<br class="for--pc">念の為ご確認お願い致します。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <div class="footer__limit font--center">
+            <div class="footer__links display__inline">
+                <div class="footer__link link--1">
+                    <a 
+                        href="/about.html" 
+                        target="_blank"
+                    >
+                        <p class="footer__link-text color--black">運営会社</p>
+                    </a>
+                </div>
+                <div class="footer__link link--2">
+                    <a 
+                        href="/privacy-policy.html" 
+                        target="_blank"
+                    >
+                        <p class="footer__link-text color--black">プライバシーポリシー</p>
+                    </a>
+                </div>
+                <div class="footer__link link--3">
+                    <a 
+                        href="/terms.html" 
+                        target="_blank"
+                    >
+                        <p class="footer__link-text color--black">利用規約</p>
+                    </a>
+                </div>
+            </div>
+            <p class="footer__copyright color--black">Copyright © 渋谷法務総合事務所.</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="../_resources/js/forms/success.js"></script>
+<script async src="https://s.yimg.jp/images/listing/tool/cv/ytag.js"></script>
+<script>
+window.yjDataLayer = window.yjDataLayer || [];
+function ytag() { yjDataLayer.push(arguments); }
+ytag({
+  "type":"yjad_retargeting",
+  "config":{
+    "yahoo_retargeting_id": "BDT61I7MRD",
+    "yahoo_retargeting_label": "",
+    "yahoo_retargeting_page_type": "",
+    "yahoo_retargeting_items":[
+      {item_id: '', category_id: '', price: '', quantity: ''}
+    ]
+  }
+});
+</script>
+</body>
+
+</html>

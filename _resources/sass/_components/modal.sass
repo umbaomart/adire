@@ -1,0 +1,112 @@
+/** 
+ * CUSTOM MODAL
+ */
+.modal-wrapper
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 1
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.85)
+    backface-visibility: hidden
+    opacity: 0
+    visibility: hidden
+
+.modal-holder
+    position: fixed
+    top: 0px
+    left: 0px
+    z-index: 999
+    width: 100%
+    height: 100%
+    overflow: auto
+    padding: 15px
+    text-align: center
+    opacity: 0
+    visibility: hidden
+
+    &::after
+        content: ''
+        display: inline-block
+        vertical-align: middle
+        height: 100%
+        margin-left: -0.5em
+
+    &.is-active
+        opacity: 1
+        visibility: visible
+
+        .modal-wrapper
+            opacity: 1
+            visibility: visible
+
+        .modal
+            transform: translateY(0px)
+
+.modal
+    position: relative
+    z-index: 2
+    display: inline-block
+    vertical-align: middle
+    max-width: 700px
+    width: 100%
+    overflow: hidden
+    margin-left: -9px
+    margin-bottom: 10px
+    background: #fff
+    border-radius: 10px
+    outline: 0
+    transform: translateY(-30px)
+    transition: all 0.2s ease
+
+    &.size--m
+        max-width: 600px
+
+    &.size--s
+        max-width: 400px
+
+.modal-close
+    position: absolute
+    top: 0
+    right: 0
+    padding: 5px 10px
+    font-family: $font--2
+    font-size: 16px
+    font-weight: bold
+    cursor: pointer
+    transition: all 0.3s ease
+
+    &:hover
+        color: #cecece
+
+.modal-title
+    padding: 14px 15px
+    background: #fff
+    border-bottom: 1px solid #dcdcdc
+
+    > *
+        font-size: 16px
+
+.modal-contents
+    padding: 20px 25px
+
+.modal-disclaimer
+    *
+        font-size: 16px
+        line-height: 22px
+
+.modal-confirmation
+    .modal
+        max-width: 400px
+
+    .form__row:last-child
+        margin-bottom: 0px
+    
+    .btn
+        margin-top: 0px
+
+
+@media screen and (max-width: 600px)
+    .modal-contents
+        padding: 20px 15px

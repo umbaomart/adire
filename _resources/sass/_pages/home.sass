@@ -1,0 +1,59 @@
+/* =======================
+ * HOME
+ * ======================= */
+
+.shibuya-maininfo__limit
+    min-height: 80vh
+
+.shibuya-maininfo__tableholder
+    position: relative
+    width: 750px
+    margin: auto
+
+#shibuya-maininfo-table
+    position: relative
+    border-collapse: collapse
+    border: 1px solid #e1e1e1
+
+    tr
+        border-bottom: 1px solid #e1e1e1
+
+    td
+        padding: 20px
+        font-family: $font--2
+        font-size: 15px
+        line-height: 26px
+
+        &:first-child
+            width: 200px
+            background: #EEEFF1
+            font-weight: bold
+
+    a
+        font-size: 15px
+        line-height: 26px
+        color: #000
+        text-decoration: underline
+
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+
+@media screen and ( max-width: 1250px )
+    .shibuya-maininfo__limit.frame__limit
+        padding: 75px 0px
+
+@media screen and ( max-width: 850px )
+    .shibuya-maininfo__tableholder
+        width: 100%
+    
+@media screen and ( max-width: 600px )
+    .shibuya-maininfo__limit.frame__limit
+        padding: 45px 0px
+
+    #shibuya-maininfo-table
+        td
+            padding: 15px
+            
+            &:first-child
+                width: 120px
+    

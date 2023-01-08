@@ -1,0 +1,519 @@
+@charset "UTF-8";
+/* CSS Document */
+/*design*/
+/***************************************
+
+BREAK POINTS
+
+***************************************/
+p {
+  font-size: 2.133333333333333vw;
+}
+
+/*Reset*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+address,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+caption,
+th,
+td,
+img,
+form {
+  margin: 0;
+  padding: 0;
+  border: none;
+  line-height: 100%;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+  vertical-align: top;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*全体------------------------------------------------*/
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: #f7f7f8;
+  margin: 0px;
+  margin: 0 auto;
+  padding: 0px;
+  font-family: "ヒラギノ角ゴ Pro W3", Hiragino Kaku Gothic Pro W3, "游ゴシック", YuGothic, "ヒラギノ角ゴシック Pro N", Hiragino Kaku Gothic ProN, "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  letter-spacing: 0.05rem;
+  line-height: 1.5;
+}
+
+/*リンク----------------------------*/
+a {
+  color: #0005dc;
+  text-decoration: underline;
+}
+
+p {
+  margin: 30px 10px 0 10px;
+  line-height: 2;
+  font-size: 15px;
+  /*1.5rem*/
+  font-size: 1.5rem;
+  color: #333;
+}
+
+header {
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 640px;
+}
+
+p.date {
+  padding: 10px 0 0 0;
+  margin: 0px 20px;
+  font-size: 12px;
+  /*2rem*/
+  font-size: 1.2rem;
+  color: #aaa;
+}
+
+article {
+  margin: 0 auto;
+  padding: 0 0 50px 0;
+  width: 100%;
+  max-width: 640px;
+  background: #fff;
+  border-right: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+}
+
+article img {
+  margin: 0;
+  padding: 0px 0px;
+  width: 100%;
+  display: block;
+}
+
+ul.t {
+  display: table;
+  width: 100%;
+}
+
+ul.t li.t {
+  display: table-cell;
+}
+
+p {
+  color: #000;
+}
+
+span.underline {
+  color: #fe0000;
+  /*
+  color:#000000;
+  */
+  background-color: #ff0;
+}
+
+li.t.img {
+  width: 180px;
+}
+
+p.img {
+  margin: 30px 10px 0 10px;
+}
+
+p.link img,
+p.img img {
+  width: 100%;
+  height: auto;
+}
+
+em {
+  padding: 0.2em;
+  font-weight: bold;
+  display: inline;
+  font-style: normal;
+}
+
+p.link {
+  font-size: 18px;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+p.red {
+  color: #fe0000;
+  font-weight: bold;
+}
+
+.link {
+  font-size: 18px;
+  font-size: 1.8rem;
+}
+
+.link ul {
+  margin: 20px 10px -20px 10px;
+}
+
+.link ul li {
+  margin: 0.6em 10px 0 2em;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  list-style-type: disc;
+}
+
+.links h3 {
+  padding: 25px 15px 15px 15px;
+  border-top: 1px solid #e5e5e5;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.links a {
+  text-decoration: none;
+}
+
+.links p {
+  font-size: 12px;
+  font-size: 1.2rem;
+}
+
+.links ul {
+  margin: 0;
+  padding: 0;
+}
+
+.links li {
+  border-top: 1px solid #e5e5e5;
+  margin: 0;
+  padding: 10px;
+  list-style-type: none;
+  font-size: 13px;
+  font-size: 1.3rem;
+}
+
+.links .img span {
+  width: 75px;
+  height: 75px;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+
+.links p.img img {
+  display: block;
+  position: absolute;
+  width: auto;
+  height: 100%;
+  left: 50%;
+  top: 0;
+  margin: 0 0 0 -50%;
+}
+
+.links a {
+  display: table;
+  width: 100%;
+}
+
+.links p,
+.links div.mark {
+  display: table-cell;
+  padding: 10px;
+}
+
+.links div.mark {
+  vertical-align: middle;
+  width: 20px;
+}
+
+.links div.mark:after {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-top: 3px solid #ddd;
+  border-right: 3px solid #ddd;
+  transform: rotate(45deg);
+  display: block;
+}
+
+.links p.img {
+  padding: 0;
+  height: 75px;
+  width: 75px;
+}
+
+footer {
+  background: #631330;
+  text-align: center;
+}
+
+footer div {
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 10px 0 10px;
+}
+
+footer div:nth-of-type(2) {
+  border-left: 1px solid #fff;
+}
+
+footer div a {
+  font-size: 16px;
+  color: #fff;
+  text-decoration: none;
+}
+
+/***************************************
+
+ヘッダー
+
+***************************************/
+header {
+  background-color: #142263;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px 0;
+  color: #fff;
+}
+
+/***************************************
+
+h1（タイトル）
+
+***************************************/
+.header_title1 {
+  background: #fff;
+  font-size: 23px;
+  font-size: 2.3rem;
+  padding: 17px 10px;
+  text-align: center;
+}
+
+@media screen and (min-width: 641px) {
+  .header_title1 {
+    font-size: 35px;
+    font-size: 3.5rem;
+  }
+}
+
+/***************************************
+
+文字の装飾
+
+***************************************/
+.important_sentence {
+  color: #ff0004;
+  font-weight: bold;
+}
+
+.letter_space {
+  letter-spacing: -0.02em;
+}
+
+/***************************************
+
+Check
+
+***************************************/
+li {
+  margin: 10px;
+  line-height:1.8;
+  font-size: 15px;
+  /*1.5rem*/
+  font-size: 1.5rem;
+  color: #333;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.questionnaire {
+  padding: 15px;
+  background: #631330;
+}
+
+.questionnaire div {
+  padding: 12px;
+  background: #fff;
+}
+
+.questionnaire__balloon {
+  margin: 30px 10px 0 10px;
+  width: 15%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.questionnaire__question {
+  font-weight: 700;
+  margin-top: 0;
+  font-size: 20px;
+}
+
+.questionnaire input {
+  display: none;
+}
+
+.questionnaire input + span {
+  display: inline-block;
+  position: relative;
+  padding: 0 0 0 2em;
+  margin: 0 .2em 0;
+  cursor: pointer;
+}
+
+.questionnaire input + span::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  border: 2px solid #333;
+  border-radius: 2px;
+  width: 1em;
+  height: 1em;
+  display: block;
+}
+
+.questionnaire input:checked + span::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 1em;
+  height: .3em;
+  margin-top: -.2em;
+  display: block;
+  border-left: 4px solid #FF0000;
+  border-bottom: 4px solid #FF0000;
+}
+
+@media screen and (max-width: 30em) {
+  .questionnaire {
+    padding: 10px;
+  }
+  .questionnaire__balloon {
+    width: 20%;
+  }
+  .questionnaire__question {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+/***************************************
+
+page_view
+
+***************************************/
+.page_view {
+  margin-top: 0;
+  text-align: right;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.page_view span {
+  font-size: 16px;
+  /* color: #5eb6d3; */
+  color: #631330;
+}
+
+p.thanks {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 60px auto 10px auto;
+  padding-bottom: 50px;
+  text-align: center;
+}
+
+@media screen and (max-width: 30em) {
+  p.thanks {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 50px auto 0px auto;
+    padding: 0px 0 50px 0;
+  }
+}
+
+/***************************************
+
+btn
+
+***************************************/
+.btn_text {
+  font-size: 28px;
+  font-weight: bold;
+  margin: 60px auto 10px auto;
+  text-align: center;
+}
+
+.btn_img {
+  width: 80%;
+  margin: 20px auto;
+}
+
+@media screen and (max-width: 30em) {
+  .btn_img {
+    width: 94%;
+    margin: 10px auto;
+  }
+}
+
+/***************************************
+
+count
+
+***************************************/
+.count {
+  color: #999;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* 追加修正分CSS */
+.add_text01 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.add_text02 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  background-color: red;
+  color: #fff;
+}
+
+.add_marker {
+  background:linear-gradient(transparent 60%, #ff6 60%);
+}

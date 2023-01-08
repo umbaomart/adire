@@ -1,0 +1,44 @@
+$adireRed: #d11e1d
+
+body.form--adire.chatform
+
+  header.in--form
+    background: #f4f4f4
+
+  .cf-wrapper
+    padding-top: 91px
+
+  .lp4-available.frame
+    position: relative
+    border-top: 28px solid $adireRed
+    // border-bottom: 60px solid $adireRed
+    background: url('./../images/forms/adire/frame-bg.jpg') no-repeat center center
+    background-size: cover
+
+    &:before
+      content: ''
+      position: absolute
+      height: 70px
+      width: 100%
+      left: 0
+      bottom: 0
+      background: $adireRed
+
+  .lp4-available__header
+    @media screen and (min-width: 1250px)
+      max-width: 730px
+
+  .frame__listBox
+    .cf-box
+      &:not(:first-child)
+        margin-top: 50px
+
+  .cf-question__asstname
+    font-weight: bold
+
+  .cd-box__answer
+    display: none
+
+  .cf-chatbubble.chatbubble--you
+    background: #bc1413
+    border-radius: 10px

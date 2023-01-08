@@ -1,0 +1,66 @@
+/* =======================
+ * WARNING
+ * ======================= */
+
+.wrn-box.qf-box
+    width: 1000px
+    padding: 0px
+    box-shadow: none
+
+.wrn-box__header-text.qf-box__header-text
+    *
+        color: #a10100 !important
+
+    .blocks *
+        color: #fff !important
+        background: #a10100
+
+.wrn-box__set.qf-box__set
+    display: block
+    padding: 55px 40px
+    background: #fff
+    border: 3px solid #a10100
+
+.wrn-box__set-text
+    margin: auto
+    font-size: 20px
+    line-height: 30px
+    color: #333
+
+    &.for--sp
+        display: none
+
+.wrn-box__return.btn
+    margin-top: 50px
+    background: #a10100 !important
+    cursor: pointer
+
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+
+@media screen and (max-width: 1150px)
+    .wrn-box.qf-box
+        width: 100%
+
+@media screen and (max-width: 950px)
+    .wrn-box__set-text
+        &.for--pc
+            display: none
+        &.for--sp
+            display: block
+
+@media screen and (max-width: 600px)
+    .wrn-boxholder.qf-boxholder
+        min-height: 75vh
+
+    .wrn-box.qf-box
+        margin-top: 15px
+        margin-bottom: 30px
+
+    .wrn-box__set.qf-box__set
+        padding: 25px 15px
+
+    .wrn-box__set-text
+        font-size: 18px
+        line-height: 28px
+

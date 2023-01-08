@@ -1,0 +1,84 @@
+/* =======================
+ * HEADER
+ * ======================= */
+
+header
+    z-index: 99
+
+    &.in--form
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        background: #fff
+
+        .header__limit  
+            padding: 15px 0px
+
+.header__limit
+    position: relative
+    z-index: 2
+    width: 88%
+    max-width: 1980px
+    margin: auto
+    padding: 25px 0px
+    text-align: center
+
+.header__logo
+    max-width: 350px
+    margin: auto
+    cursor: pointer
+
+    img
+        max-width: 100%
+
+
+.chatformlp6
+    header
+        border-bottom: get-vw-desktop(20px) solid $color--maroon
+
+        &.in--form
+            position: absolute
+            top: 0
+            left: 0
+            width: 100%
+            background: #fff
+
+            .header__limit
+                padding: get-vw-desktop(38px) get-vw-desktop(10px)
+    
+    .header__limit
+        padding: get-vw-desktop(38px) get-vw-desktop(10px)
+        position: relative
+        z-index: 2
+        width: 100%
+        max-width: 1920px
+        margin: auto
+        text-align: center
+
+    .header__logo
+        width: 100%
+        max-width: get-vw-desktop(421px)
+        margin: auto
+        cursor: pointer
+
+        img
+            width: 100%
+
+/* ========================================================================================================================= */
+/* ========================================================================================================================= */
+
+@media screen and (max-width: 768px)
+    .chatformlp6
+        header
+            border-bottom: get-vw-mobile(6px) solid $color--maroon
+
+            &.in--form
+                .header__limit
+                    padding: get-vw-mobile(20px) get-vw-mobile(10px)
+
+        .header__limit
+            padding: get-vw-mobile(20px) get-vw-mobile(10px)
+
+        .header__logo
+            max-width: get-vw-mobile(280px)
